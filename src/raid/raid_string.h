@@ -8,16 +8,7 @@ namespace raid {
     class String {
     public:
         String();
-        /**
-         * Create a new string with a specific value.
-         * @param value The value to initialize the string with.
-         */
         explicit String(char* value);
-
-        /**
-         * Copy a source string to this new one.
-         * @param source The source string to copy.
-         */
         String(const String& source);
 
         /**
@@ -31,6 +22,8 @@ namespace raid {
 		String toUpperCase();
 		String toLowerCase();
 		char* raw();
+		void append(String s);
+		void append(char c);
 
 		// Operator overloads
 		friend std::ostream& operator<<(std::ostream& os, const String& obj);

@@ -93,3 +93,20 @@ raid::String raid::String::toLowerCase() {
 char* raid::String::raw() {
 	return this->value;
 }
+
+void raid::String::append(String s) {
+	char* newArray = new char[std::strlen(this->value) + std::strlen(s.value) + 1];
+	std::strcpy(newArray, this->value);
+	std::strcat(newArray, s.value);
+	this->value = newArray;
+}
+
+void raid::String::append(char c) {
+	char addChar[] {c, '\0'};
+
+	char* newArray = new char[std::strlen(this->value) + std::strlen(addChar) + 1];
+	std::strcpy(newArray, this->value);
+	std::strcat(newArray, addChar);
+
+	this->value = newArray;
+}
