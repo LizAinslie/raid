@@ -1,0 +1,21 @@
+site_name: Raid Documentation
+nav:
+  - Home: 'index.md'
+  - Reference:
+      - Classes:
+          - String: 'reference/classes/string.md'
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
+  - pymdownx.superfences
+theme:
+  name: material
+  palette:
+    primary: light green
+    accent: light green
+
+docs_dir: 'docs_src'
+site_dir: 'docs'
