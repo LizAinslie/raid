@@ -10,20 +10,16 @@ namespace raid {
         String();
         explicit String(char* value);
         String(const String& source);
-
-        /**
-         * Move a source string to this new one.
-         * @param source The source string to move.
-         */
         String(String&& source) noexcept;
         ~String();
 
-        RAID_INT length();
+        int length();
 		String toUpperCase();
 		String toLowerCase();
 		char* raw();
 		void append(String s);
 		void append(char c);
+		void append(int i);
 
 		// Operator overloads
 		friend std::ostream& operator<<(std::ostream& os, const String& obj);

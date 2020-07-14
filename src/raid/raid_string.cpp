@@ -3,6 +3,8 @@
 #include <cstring>
 #include <string>
 
+#include "raid_utils.h"
+
 raid::String::String() {
     this->value = new char[1];
     this->value[0] = '\0';
@@ -32,7 +34,7 @@ raid::String::~String() {
     delete this->value;
 }
 
-RAID_INT raid::String::length() {
+int raid::String::length() {
     return strlen(this->value);
 }
 
@@ -103,6 +105,16 @@ void raid::String::append(String s) {
 
 void raid::String::append(char c) {
 	char addChar[] {c, '\0'};
+
+	char* newArray = new char[std::strlen(this->value) + std::strlen(addChar) + 1];
+	std::strcpy(newArray, this->value);
+	std::strcat(newArray, addChar);
+
+	this->value = newArray;
+}
+
+void raid::String::append(int i) {
+	const char* addChar = raid::utils::intToChars(i);
 
 	char* newArray = new char[std::strlen(this->value) + std::strlen(addChar) + 1];
 	std::strcpy(newArray, this->value);

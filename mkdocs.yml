@@ -2,6 +2,7 @@ site_name: Raid Documentation
 nav:
   - Home: 'index.md'
   - Reference:
+      - Utility Functions: 'reference/utility-functions.md'
       - Classes:
           - String: 'reference/classes/string.md'
 markdown_extensions:
@@ -15,7 +16,9 @@ theme:
   name: material
   palette:
     primary: light green
-    accent: light green
+    accent: green
+  icon:
+    logo: material/buffer
 
 docs_dir: 'docs_src'
 site_dir: 'docs'
