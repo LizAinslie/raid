@@ -10,18 +10,18 @@
       
       
       
-      <link rel="shortcut icon" href="assets/images/favicon.png">
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
     
     
       
-        <title>Raid Documentation</title>
+        <title>Utility Functions - Raid Documentation</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.fe0cca5b.min.css">
       
-        <link rel="stylesheet" href="assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.a46bcfb3.min.css">
       
       
         
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-raid" class="md-skip">
+        <a href="#const-char-inttocharsint-i" class="md-skip">
           Skip to content
         </a>
       
@@ -69,7 +69,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="." title="Raid Documentation" class="md-header-nav__button md-logo" aria-label="Raid Documentation">
+    <a href="../.." title="Raid Documentation" class="md-header-nav__button md-logo" aria-label="Raid Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.6 2.86c2.67 1.24 5.4 2.53 8.06 3.77.15.07.34.12.34.32s-.19.24-.34.31C18 8.5 15.3 9.77 12.62 11a1.3 1.3 0 01-1.24 0C8.69 9.76 6 8.5 3.32 7.25 3.18 7.19 3 7.14 3 6.94c0-.18.18-.23.31-.29C6 5.39 8.74 4.1 11.44 2.85c.29-.13.86-.12 1.16.01M12 21.15c-.2 0-.34-.08-.62-.18-2.69-1.24-5.38-2.5-8.05-3.75-.14-.07-.33-.11-.33-.32 0-.2.19-.24.34-.31.44-.21.89-.42 1.33-.63.45-.2.89-.2 1.33.01 1.79.83 3.57 1.66 5.35 2.49.44.21.88.2 1.32 0 1.78-.84 3.56-1.67 5.33-2.5.44-.2.87-.21 1.29-.01.48.21.95.44 1.42.66.07.03.14.07.2.12.13.1.13.27 0 .35-.08.06-.17.11-.26.15-2.65 1.27-5.32 2.49-7.99 3.72-.2.1-.47.2-.66.2m0-4.98c-.1 0-.45-.1-.64-.17-2.68-1.26-5.36-2.5-8.02-3.76-.14-.06-.34-.11-.34-.31 0-.21.2-.25.35-.32.45-.22.9-.43 1.35-.64.43-.19.86-.19 1.3.03 1.78.82 3.58 1.66 5.38 2.5.41.19.83.19 1.25 0 1.8-.85 3.6-1.69 5.41-2.53.41-.19.83-.19 1.25 0 .47.22.95.44 1.42.66.06.03.13.06.19.11.14.11.14.26-.01.38-.05.04-.12.07-.18.1-2.71 1.28-5.4 2.53-8.1 3.78-.19.09-.53.17-.61.17z"/></svg>
@@ -86,7 +86,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Home
+              Utility Functions
             
           </span>
         </div>
@@ -143,7 +143,7 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Raid Documentation" class="md-nav__button md-logo" aria-label="Raid Documentation">
+    <a href="../.." title="Raid Documentation" class="md-nav__button md-logo" aria-label="Raid Documentation">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.6 2.86c2.67 1.24 5.4 2.53 8.06 3.77.15.07.34.12.34.32s-.19.24-.34.31C18 8.5 15.3 9.77 12.62 11a1.3 1.3 0 01-1.24 0C8.69 9.76 6 8.5 3.32 7.25 3.18 7.19 3 7.14 3 6.94c0-.18.18-.23.31-.29C6 5.39 8.74 4.1 11.44 2.85c.29-.13.86-.12 1.16.01M12 21.15c-.2 0-.34-.08-.62-.18-2.69-1.24-5.38-2.5-8.05-3.75-.14-.07-.33-.11-.33-.32 0-.2.19-.24.34-.31.44-.21.89-.42 1.33-.63.45-.2.89-.2 1.33.01 1.79.83 3.57 1.66 5.35 2.49.44.21.88.2 1.32 0 1.78-.84 3.56-1.67 5.33-2.5.44-.2.87-.21 1.29-.01.48.21.95.44 1.42.66.07.03.14.07.2.12.13.1.13.27 0 .35-.08.06-.17.11-.26.15-2.65 1.27-5.32 2.49-7.99 3.72-.2.1-.47.2-.66.2m0-4.98c-.1 0-.45-.1-.64-.17-2.68-1.26-5.36-2.5-8.02-3.76-.14-.06-.34-.11-.34-.31 0-.21.2-.25.35-.32.45-.22.9-.43 1.35-.64.43-.19.86-.19 1.3.03 1.78.82 3.58 1.66 5.38 2.5.41.19.83.19 1.25 0 1.8-.85 3.6-1.69 5.41-2.53.41-.19.83-.19 1.25 0 .47.22.95.44 1.42.66.06.03.13.06.19.11.14.11.14.26-.01.38-.05.04-.12.07-.18.1-2.71 1.28-5.4 2.53-8.1 3.78-.19.09-.53.17-.61.17z"/></svg>
@@ -158,20 +158,11 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="." title="Home" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../.." title="Home" class="md-nav__link">
       Home
     </a>
-    
   </li>
 
     
@@ -179,10 +170,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
     
     <label class="md-nav__link" for="nav-2">
       Reference
@@ -204,11 +197,49 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="reference/utility-functions/" title="Utility Functions" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Utility Functions
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Utility Functions" class="md-nav__link md-nav__link--active">
       Utility Functions
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#const-char-inttocharsint-i" class="md-nav__link">
+    const char* intToChars(int i)
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -243,7 +274,7 @@
 
 
   <li class="md-nav__item">
-    <a href="reference/classes/string/" title="String" class="md-nav__link">
+    <a href="../classes/string/" title="String" class="md-nav__link">
       String
     </a>
   </li>
@@ -273,8 +304,23 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#const-char-inttocharsint-i" class="md-nav__link">
+    const char* intToChars(int i)
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -290,8 +336,32 @@
                   
                 
                 
-                <h1 id="about-raid">About Raid<a class="headerlink" href="#about-raid" title="Permanent link">&para;</a></h1>
-<p>Raid is a multipurpose C++ library that aims to be an all-encompassing solution to your needs. Raid is thoroughly tested and ready for use in all types of projects.</p>
+                  <h1>Utility Functions</h1>
+                
+                <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that the namespace for these functions is <code>raid::utils</code>.</p>
+</div>
+<h3 id="const-char-inttocharsint-i"><code>const char* intToChars(int i)</code><a class="headerlink" href="#const-char-inttocharsint-i" title="Permanent link">&para;</a></h3>
+<p>Convert an integer value to a character array (C-style string).</p>
+<p><strong>Returns:</strong> The integer represented as a character array.</p>
+<p><strong>Parameters:</strong></p>
+<table>
+<thead>
+<tr>
+<th align="right">Type</th>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right"><a href="https://en.cppreference.com/w/cpp/keyword/int"><code>int</code></a></td>
+<td><code>i</code></td>
+<td>The integer to convert.</td>
+</tr>
+</tbody>
+</table>
                 
               
               
@@ -310,14 +380,28 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
+          <a href="../.." title="Home" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-footer-nav__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+            </div>
+            <div class="md-footer-nav__title">
+              <div class="md-ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Home
+              </div>
+            </div>
+          </a>
         
-          <a href="reference/utility-functions/" title="Utility Functions" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+        
+          <a href="../classes/string/" title="String" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Utility Functions
+                String
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -344,15 +428,15 @@
       
     </div>
     
-      <script src="assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.d710d30a.min.js"></script>
+      <script src="../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
-          base: ".",
+          base: "../..",
           features: [],
           search: Object.assign({
-            worker: "assets/javascripts/worker/search.a68abb33.min.js"
+            worker: "../../assets/javascripts/worker/search.a68abb33.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
